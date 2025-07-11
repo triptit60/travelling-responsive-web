@@ -28,3 +28,24 @@ const LinkAction = () =>{
 }
 
 navlink.forEach(n => n.addEventListener('click', LinkAction))
+
+
+
+
+
+const swiperHome = new Swiper('.home__swiper', {
+
+  loop: true,
+  slidesPerView: 'auto',
+
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // autoplay:{
+  //   delay: 3000,
+  //   disableOnIntraction: false,
+  // }
+})
