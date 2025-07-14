@@ -31,7 +31,7 @@ navlink.forEach(n => n.addEventListener('click', LinkAction))
 
 
 
-
+// ===========SWIPER HOME======================
 
 const swiperHome = new Swiper('.home__swiper', {
 
@@ -58,3 +58,22 @@ window.scrollY >= 50 ? header.classList.add('bg-header')
                      : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', bgHeader)
+
+// ================ SWIPER TESTIMONIAL==================
+const swiperTestimonial = new Swiper('.testimonial__swiper', {
+
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween:48,
+
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // autoplay:{
+  //   delay: 3000,
+  //   disableOnIntraction: false,
+  // }
+})
