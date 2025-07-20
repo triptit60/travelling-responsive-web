@@ -72,8 +72,8 @@ const swiperTestimonial = new Swiper('.testimonial__swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // autoplay:{
-  //   delay: 3000,
-  //   disableOnIntraction: false,
-  // }
+  autoplay:{
+    delay: 3000,
+    disableOnIntraction: false,
+  }
 })
