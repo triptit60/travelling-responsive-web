@@ -89,6 +89,35 @@ h1,h2, h3, h4{
     height: auto;
  }
 
+/* ===============THEME==================
+============VARIABLES DARK THEME=================== */
+.dark-theme{
+      --title-color: hsl(220, 8%, 90%);
+    --text-color: hsl(220, 8%, 70%);
+    --body-color: hsl(220, 8%, 8%);
+    --container-color: hsl(220, 8%, 12%);
+    --opacity-color-30: hsla(0, 0%, 15%, .3);
+    --opacity-color-20: hsla(0, 0%, 15%, .2);
+}
+ /* color changesin some parts of the website in dark theme */
+  .dark-theme .bg-header .nav__logo img{
+    filter: initial;
+  }
+ .dark-theme .bg-header{
+    box-shadow: 0 8px 16px hsla(0, 0%, 0%, .4);
+ }
+.dark-theme .scrollup{
+    background-color: var(--container-color);
+}
+.dark-theme::-webkit-scrollbar{
+    background-color: hsla(220, 6%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb{
+    background-color: hsl(220, 6%, 40%);
+}
+
+/* ==============resuable css classes============== */
  .container{
     max-width: 1120px;
     margin-inline: 1.5rem;
@@ -229,6 +258,14 @@ h1,h2, h3, h4{
 .bg-header .nav__logo img{
     filter: invert(100%);
 }
+/* ACTIVE LINK */
+.active-link::after{
+    width: 60%;
+}
+
+
+
+
 
 /* homeeeeeee */
 .home{
@@ -665,3 +702,4 @@ row-gap: .75rem;
 .show-scroll{
     bottom: 3rem;
 }
+
